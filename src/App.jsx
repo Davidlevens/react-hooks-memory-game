@@ -6,7 +6,7 @@ import './index.css';
 import Game from './game';
 import themes from './config/themes.json';
 
-function App () {
+function App() {
   const [themeName, toggleTheme] = useTheme('darkTheme');
 
   const GlobalStyle = createGlobalStyle`
@@ -16,7 +16,7 @@ function App () {
         transition: background .3s ease;
     }
   `;
-  
+
   return (
     <ThemeProvider theme={themes[themeName]}>
       <React.Fragment>
